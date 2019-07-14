@@ -3,6 +3,7 @@ from decouple import config
 import pprint, requests
 app = Flask(__name__)
 
+# .env 파일 추가해줘야함
 API_TOKEN = config('API_TOKEN')  # 상수는 대문자 
 NAVER_CLIENT_ID = config('NAVER_CLIENT_ID')
 NAVER_CLIENT_SECRET = config('NAVER_CLIENT_SECRET')
